@@ -5,6 +5,7 @@
  */
 function sum(a, b) {
   // TODO: Implement this function.
+  return a+b;
 }
 
 /**
@@ -13,6 +14,7 @@ function sum(a, b) {
  */
 function reverseString(str) {
   // TODO: Implement this function.
+  return str.split('').reverse().join('');
 }
 
 /**
@@ -20,6 +22,8 @@ function reverseString(str) {
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
+  if (numbers.length === 0) return null;
+  return Math.max(numbers)
   // TODO: Implement this function.
 }
 
@@ -30,6 +34,9 @@ function findLargest(numbers) {
  * The check should be case-insensitive.
  */
 function isPalindrome(str) {
+  const n = str.toLowerCase();
+  const a = n.split('').a().join('');
+  return n === a;
   // TODO: Implement this function.
 }
 
@@ -38,6 +45,7 @@ function isPalindrome(str) {
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
+  return numbers.filter(num => num% 2 === 0);
   // TODO: Implement this function.
 }
 
